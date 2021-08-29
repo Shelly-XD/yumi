@@ -196,7 +196,7 @@ def pilih_india():
 			print (" [+] hasil \033[0;93mcp\033[0;97m tanggal : \033[0;92m%s-%s-%s\033[0;97m" % (ha, op, ta)) 
 			os.system("cat out/CP-%s-%s-%s.txt" % (ha, op, ta))
 			exit()
-                elif ress == "3" or ress == "03:
+                elif ress == "3" or ress == "03":
 			print (" [+] hasil \033[0;93mcp\033[0;97m tanggal : \033[0;92m%s-%s-%s\033[0;97m" % (ha, op, ta)) 
 			os.system("cat out/CP-%s-%s-%s.txt" % (ha, op, ta))
 			exit()
