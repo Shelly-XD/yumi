@@ -139,7 +139,7 @@ def menu():
 	print" \033[0;97  #-----------------------------------#"
 	print" \033[0;97  1. crack from id publik"
 	print" \033[0;97  2. crack from followers"
-	print" \033[0;97  3. crack from likes
+	print" \033[0;97  3. crack from likes"
         print" \033[0;97  4. lihat hasil crack"
 	print" \033[0;97  0. remove token and cookies"
 	pilih_india()
