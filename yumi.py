@@ -195,11 +195,9 @@ def pilih_india():
 		elif ress == "2" or ress == "02":
 			print (" [+] hasil \033[0;93mcp\033[0;97m tanggal : \033[0;92m%s-%s-%s\033[0;97m" % (ha, op, ta)) 
 			os.system("cat out/CP-%s-%s-%s.txt" % (ha, op, ta))
-			exit()
-                elif ress == "3" or ress == "03":
-			print (" [+] hasil \033[0;93mcp\033[0;97m tanggal : \033[0;92m%s-%s-%s\033[0;97m" % (ha, op, ta)) 
-			os.system("cat out/CP-%s-%s-%s.txt" % (ha, op, ta))
-			exit()
+			exit()       
+                elif ask == "3" or ask == "03":
+    	            likes()
 		else:
 			exit(" × pilih yang benar sayang") 
 	elif ask == "0" or ask == "00":
